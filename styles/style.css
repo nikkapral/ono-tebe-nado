@@ -130,10 +130,10 @@
 }
 
 .jambotron-descrition {
-    flex: 1;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: flex-end;
+    height: 100%;
     margin-bottom: 62px;
 
 }
@@ -148,20 +148,18 @@
     line-height: 28px; /* 127.273% */
     text-transform: uppercase;
     word-spacing: 20px;
-    position: absolute;
-    left: 50%;
-    bottom: 62px;
-    transform: translate(-50%, -50%);
+    justify-content: center;
 }
 
 .jambotron-button-rectangle {
     width: 257px;
     height: 52px;
     border: 1px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
     flex-shrink: 0;
-    position: absolute;
-    bottom: 64px;
-    right: 50px;
 }
 
 .jambotron-button-rectangle a {
@@ -172,10 +170,100 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    position: absolute;
     text-transform: uppercase;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     white-space: nowrap;
+}
+
+.jambotron-description-space {
+    width: 314px;
+}
+
+.lots {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    padding: 0px 50px;
+}
+
+.lots-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.lots-title {
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.lots-cards {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    height: 450px;
+    margin-top: 27px;
+}
+
+.lots-card {
+    height: 100%;
+    width: 32%;
+}
+
+#lots-card-01 {
+    background-image: url("../images/card-lot-01.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#lots-card-02 {
+    background-image: url("../images/card-lot-02.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#lots-card-03 {
+    background-image: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.lots-card-image-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 40px;
+}
+
+.lots-card-image-overlay h2 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.lots-card-image-overlay p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
 }
