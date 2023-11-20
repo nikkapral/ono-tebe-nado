@@ -1,22 +1,26 @@
-.header {
-    display: flex;
-    margin: 92px auto;
-    width: 100%;
-    min-height: 109px;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
+
+a {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+    text-underline-offset: 5px; 
 }
 
-.header-content {
-    width: 100%;
+a.active-link {
+    text-decoration: none;
+}
+
+.header {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    margin-left: 51px;
-    margin-right: 38px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 92px 49px 95px 51px;
+    width: 100%;
     background-color: white;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .navigation {
@@ -32,24 +36,6 @@
     margin: 0px 9px;
 }
 
-.navigation a {
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.underlined {
-    text-decoration: underline;
-    text-underline-offset: 5px; 
-}
-
-.navigation :last-child {
-    margin-right: 0;
-    color: green;
-}
-
 .logo {
     justify-self: center;
     align-self: center;
@@ -58,22 +44,14 @@
 }
 
 .contacts {
-    justify-self: end;
+    justify-self: flex-end;
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
-.contacts a {
-    font-style: normal;
-    font-weight: 400;
+.contacts > a {
     line-height: 24.3px;
-    font-size: 18px;
-}
-
-.contacts #contacts-phone-number, #contacts-email{
-    text-decoration: underline;
-    text-underline-offset: 5px;
 }
 
 .overflow {
