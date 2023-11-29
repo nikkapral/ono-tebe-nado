@@ -1,4 +1,3 @@
-
 a {
     color: #000;
     font-size: 18px;
@@ -65,6 +64,8 @@ a.active-link {
 
 .jambotron-title {
     display: grid;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 260px 65px 410px 149px 183px 303px;
     grid-template-rows: 110px 125px 90px;
     row-gap: 12px;
@@ -142,7 +143,7 @@ a.active-link {
 
 .jambotron-button {
     width: 257px;
-    height: 52px;
+    min-height: 52px;
     border: 1px solid #FFF;
     display: flex;
     justify-content: center;
@@ -198,30 +199,23 @@ a.active-link {
     flex-direction: column;
     justify-content: space-between;
     padding: 50px 40px 50px 40px;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
 }
 
 .moovie-card {
     background-image: url("../images/card-lot-01.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(0,0,0,.6);
-    background-blend-mode: multiply;
 }
 
 .book-card {
     background-image: url("../images/card-lot-02.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(0,0,0,.6);
-    background-blend-mode: multiply;
+
 }
 
 .art-card {
     background-image: url("../images/card-lot-03.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-color: rgba(0,0,0,.6);
-    background-blend-mode: multiply;
 }
 
 .lots-card h3 {
@@ -229,7 +223,7 @@ a.active-link {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 26.4px */
+    line-height: 110%; /* 26.4px */
     text-decoration-line: underline;
     text-transform: uppercase;
 }
@@ -247,17 +241,25 @@ a.active-link {
     margin-top: 30px;
 }
 
+.lots-more-link {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .about {
+    transform: translateY(5px);
     display: flex;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     min-height: 600px;
     padding: 0px 50px;
 }
 
 .about-content {
-    margin-top: 72px;
     margin-left: 10px;
     display: grid;
     width: 100%;
@@ -289,7 +291,6 @@ a.active-link {
 
 .about-content h2{
     color: #000;
-    font-family: Raleway;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -303,8 +304,7 @@ a.active-link {
 
 .about-content-first-p {
     color: #000;
-    font-family: Raleway;
-    font-size: 17px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -314,8 +314,7 @@ a.active-link {
 
 .about-content-second-p {
     color: #000;
-    font-family: Raleway;
-    font-size: 17px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -324,30 +323,15 @@ a.active-link {
 
 .footer {
     display: flex;
-    padding: 92px 50px;
+    padding: 50px 50px;
     width: 100%;
-    min-height: 370px;
     background-color: white;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-content {
-    display: flex;
-    background-color: white;
-    justify-items: space-between;
-    align-items: center;
-}
-
-.footer-contacts {
-    justify-self: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    font-size: 18px;
-    margin-top: 35px;
-    line-height: 1.3;
+footer > .contacts {
+    transform: translateY(20px);
 }
 
 .footer-navigation {
@@ -372,14 +356,19 @@ a.active-link {
 }
 
 .socials {
-    margin-top: -10px;
+    margin-bottom: 10px;
     display: flex;
+    min-width: 240px;
     justify-content: space-between;
     align-content: center;
-    min-width: 240px;
-    height: 48px; /* Ограничивает размер вложенных иконок по макету */
     flex-shrink: 0;
     flex-flow: row nowrap;
+    max-width: 200px;
+}
+
+.socials > img {
+    width: 240px;
+    height: 48px;
 }
 
 .socials :first-child {
