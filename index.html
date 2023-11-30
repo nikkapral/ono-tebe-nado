@@ -12,10 +12,16 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <ul class="horizontal-list">
-          <li class='active-link'><span>главная</span></li>
-          <li class="marked"><span>посмотреть лоты</span></li>
-          <li class="marked"><span>об аукционе</span></li>
+        <ul class="header-navigation-links">
+          <li class="header-navigation-link header-navigation-link-no-mark">
+            <a class="active-link">главная</a>
+          </li>
+          <li class="header-navigation-link">
+            <a>посмотреть лоты</a>
+          </li>
+          <li class="header-navigation-link">
+            <a>об аукционе</a>
+          </li>
         </ul>
       </nav>
       <a class="logo-link" href="">
@@ -29,14 +35,12 @@
     </header>      
       <main class="main">
         <section class="jambotron">
-          <div class="jambotron-title">
-            <span class="title-1-1">он</span>
-            <span class="title-1-2">о</span>
-            <span class="title-2-3">теб</span>
-            <span class="title-2-4">е</span>
-            <span class="title-3-5">н</span>
-            <span class="title-3-6">адо</span>
-          </div>
+          <div class="overlay"></div>
+          <h1 class="jambotron-title">
+            <span class="jambotron-text-left"><span class="jambotron-title-spacing">он о</span></span>
+            <span class="jambotron-text-center"><span class="jambotron-title-spacing">теб е</span></span>
+            <span class="jambotron-text-right"><span class="jambotron-title-spacing">н адо</span></span>
+          </h1>
           <div class="jambotron-descrition">
             <p class="subline">аукцион вещей, в которые никто не верил</p>
             <button class="jambotron-button" type="button">
@@ -48,20 +52,23 @@
           <h2 class="lots-title">лоты</h2>
           <div class="lots-cards">
             <a class="lots-card-link" href="">
-              <div class="lots-card moovie-card"> 
+              <div class="moovie-card"> 
+                <div class="overlay"></div>
                 <h3>фильм режиссёра, который бросил киношколу</h3>
                 <p>Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </div>
             </a>
             <a class="lots-card-link" href="">
-              <div class="lots-card book-card">
+              <div class="book-card">
+                <div class="overlay"></div>
                 <h3>книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p>Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                 </p>
               </div>
             </a>
             <a class="lots-card-link" href="">
-              <div class="lots-card art-card"> 
+              <div class="art-card">
+                <div class="overlay"></div> 
                 <h3>картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p>Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
                 </p>
@@ -72,8 +79,9 @@
         </section>
         <section class="about">
           <div class="about-content">
-            <div class="about-ellipse"></div>
-            <img src="./images/logo-white.svg" class="about-logo" alt="Логотип">
+            <div class="about-ellipse">
+              <img src="./images/logo-white.svg" class="about-logo" alt="Логотип">
+            </div>
             <h2>об аукционе</h2>
               <div class="about-content-text-container">
                 <p class="about-content-text">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
@@ -86,15 +94,21 @@
       </main>
       <footer class="footer">
         <div class="contacts">
-          <a id="contacts-phone-number">+9 999 555 5555</a>
-          <a id="contacts-email">info@sobaka.ge</a>
-          <p class="active-link adress">наб. Принсенграхт 263-265,<br/>Амстердам</p>
+          <a>+9 999 555 5555</a>
+          <a>info@sobaka.ge</a>
+          <a class="active-link adress">наб. Принсенграхт 263-265, Амстердам</a>
         </div>
         <nav class="footer-navigation">
           <ul>
-            <li class='active-link'>главная</li>
-            <li>посмотреть лоты</li>
-            <li>об аукционе</li>
+            <a class="navigation-link active-link">
+              <li class='active-link'>главная</li>
+            </a>
+            <a>
+              <li>посмотреть лоты</li>
+            </a>
+            <a>
+              <li>об аукционе</li>
+            </a>
           </ul>
         </nav>
         <div class="socials">
@@ -111,3 +125,5 @@
       </footer> 
     </body>
 </html>
+
+
